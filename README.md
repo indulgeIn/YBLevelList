@@ -1,5 +1,8 @@
 # YBLevelList
-一个横向滚动菜单（常见的多种订单横向列表）
+一个横向滚动菜单
+
+<img src="https://github.com/indulgeIn/YBLevelList/blob/master/IntroductionsImages/YBLevelListGif.gif">
+
 
 支持pods  
 
