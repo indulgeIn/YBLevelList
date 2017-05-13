@@ -24,6 +24,8 @@ Pod::Spec.new do |s|
   s.authors       = { "yangbo" => "1106355439@qq.com" }
  
   s.platform     = :ios, "8.0"
+  # s.ios.frameworks = "UIKit", "Foundation"
+  s.dependency 'SDWebImage', '~> 3.7.6'
 
   s.source       = { :git => "https://github.com/indulgeIn/YBLevelList.git", :tag => "#{s.version}" }
 
