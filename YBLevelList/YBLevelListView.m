@@ -393,9 +393,14 @@ static const NSInteger kConstTagOfYBLevelListSubView = 666;
     if (_totalLengthOfSubView < self.bounds.size.width-0.1) {
         
         //如果总长度不能填满self.view.bounds.width
+        //        CGFloat DIF = self.bounds.size.width - _totalLengthOfSubView;
+        //        _configModel.marginOfSubView += DIF*1.0/(_subViewArr.count*1.0)/2.0;
+        //        [self configSubView];
+        
         CGFloat DIF = self.bounds.size.width - _totalLengthOfSubView;
-        _configModel.marginOfSubView += DIF*1.0/(_subViewArr.count*1.0)/2.0;
+        _configModel.spacingOfSubView += DIF*1.0/(_subViewArr.count*1.0+1);
         [self configSubView];
+        
     }
     
 }

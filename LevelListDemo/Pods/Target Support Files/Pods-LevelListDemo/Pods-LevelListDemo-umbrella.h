@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_levelListDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_levelListDemoVersionString[];
+FOUNDATION_EXPORT double Pods_LevelListDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LevelListDemoVersionString[];
 
