@@ -6,6 +6,6 @@
 
 支持pods  
 
-pod 'YBLevelList', '~> 1.0.0'
+pod 'YBLevelList', '~> 1.0.1'
 
 详细的介绍可以查看简书地址 http://www.jianshu.com/p/a27a6cb04884
