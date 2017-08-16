@@ -30,6 +30,8 @@
     //支持标题图片，支持标题富文本，请查看 YBLevelListConfigModel 头文件
     YBLevelListConfigModel *model = [YBLevelListConfigModel new];
     model.titleArr = @[@"标题一", @"标题二", @"标题三"];
+    model.imageInfoArr = @[@"gougou_lvse", @"gougou_lvse"];
+    model.spacingOfSelectLineViewToSubViewContent = 500;
     
     [self initializeWithControllers:@[vc0, vc1, vc2] titleViewConfigModel:model titleViewFrame:CGRectMake(0, 20, self.view.bounds.size.width, 44) contentViewFrame:CGRectMake(0, 44+20, self.view.bounds.size.width, [UIScreen mainScreen].bounds.size.height-20-44)];
 

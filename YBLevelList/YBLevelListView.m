@@ -159,7 +159,11 @@ static const NSInteger kConstTagOfYBLevelListSubView = 666;
             [self.scrollView addSubview:self.underLineSelectView];
         }
         self.underLineSelectView.backgroundColor = _configModel.underLineSelectedViewColor;
-        self.underLineSelectView.frame = CGRectMake(selectSubView.frame.origin.x, self.bounds.size.height-_configModel.heightOfUnderLineSelectedView, selectSubView.bounds.size.width, _configModel.heightOfUnderLineSelectedView);
+        
+        if (_configModel.spacingOfSelectLineViewToSubViewContent > _configModel.marginOfSubView) {
+            _configModel.spacingOfSelectLineViewToSubViewContent = _configModel.marginOfSubView;
+        }
+        self.underLineSelectView.frame = CGRectMake(selectSubView.frame.origin.x+_configModel.marginOfSubView-_configModel.spacingOfSelectLineViewToSubViewContent, self.bounds.size.height-_configModel.heightOfUnderLineSelectedView, selectSubView.bounds.size.width-(2*_configModel.marginOfSubView)+(2*_configModel.spacingOfSelectLineViewToSubViewContent), _configModel.heightOfUnderLineSelectedView);
         
     } else {
         //如果标题数量不能显示上一次点击下标了，回到第一个
@@ -393,13 +397,13 @@ static const NSInteger kConstTagOfYBLevelListSubView = 666;
     if (_totalLengthOfSubView < self.bounds.size.width-0.1) {
         
         //如果总长度不能填满self.view.bounds.width
-        //        CGFloat DIF = self.bounds.size.width - _totalLengthOfSubView;
-        //        _configModel.marginOfSubView += DIF*1.0/(_subViewArr.count*1.0)/2.0;
-        //        [self configSubView];
-        
         CGFloat DIF = self.bounds.size.width - _totalLengthOfSubView;
-        _configModel.spacingOfSubView += DIF*1.0/(_subViewArr.count*1.0+1);
+        _configModel.marginOfSubView += DIF*1.0/(_subViewArr.count*1.0)/2.0;
         [self configSubView];
+        
+//        CGFloat DIF = self.bounds.size.width - _totalLengthOfSubView;
+//        _configModel.spacingOfSubView += DIF*1.0/(_subViewArr.count*1.0+1);
+//        [self configSubView];
         
     }
     

@@ -63,6 +63,8 @@ typedef NS_ENUM(NSInteger, YBLevelListScrollAnimationType) {
 @property (nonatomic, assign) CGFloat spacingOfSubView;
 //子模块的左右边缘距离
 @property (nonatomic, assign) CGFloat marginOfSubView;
+//选中状态下划线距离内容左右的盈余
+@property (nonatomic, assign) CGFloat spacingOfSelectLineViewToSubViewContent;
 
 //* 背景色
 @property (nonatomic, strong) UIColor *backColor;
