@@ -3,8 +3,6 @@
 
 <img src="https://github.com/indulgeIn/YBLevelList/blob/master/IntroductionsImages/YBLevelListGif.gif">
 
-<img src="https://github.com/indulgeIn/YBImageBrowser/blob/master/YBImageBrowserDemo/TestCase/NetworkImage/networkGif0.gif">
-
 支持pods  
 
 pod 'YBLevelList', '~> 1.0.1'
